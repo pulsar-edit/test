@@ -1,42 +1,25 @@
 {
-  "name": "pulsar-edit.github.io",
+  "name": "astro-massiely",
   "version": "1.0.0",
-  "description": "A Community-led Hyper-Hackable Text Editor",
+  "private": false,
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
-    "build": "vuepress build docs",
-    "clean:dev": "vuepress dev docs --clean-cache",
-    "dev": "vuepress dev docs",
-    "format": "prettier ./**/*.md --write --ignore-path .gitignore",
-    "lint": "remark . --ignore-path .gitignore",
-    "prepare": "husky install",
-    "dep:update": "pnpm add @vuepress/client@next vuepress@next vuepress-theme-hope@next && pnpm i && pnpm up"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
   "dependencies": {
-    ".github": "github:pulsar-edit/.github",
-    "pulsar-assets": "github:pulsar-edit/pulsar-assets",
-    "vuepress-theme-hope": "2.0.0-beta.106"
+    "@astrojs/mdx": "^0.11.1",
+    "@astrojs/rss": "^1.0.1",
+    "@astrojs/sitemap": "^1.0.0",
+    "astro": "^1.2.1",
+    "astro-google-fonts-optimizer": "^0.2.1",
+    "date-fns": "^2.29.2"
   },
   "devDependencies": {
-    "@vuepress/client": "2.0.0-beta.51",
-    "@vuepress/plugin-search": "2.0.0-beta.51",
-    "@vuepress/utils": "2.0.0-beta.51",
-    "husky": "^8.0.2",
-    "lint-staged": "^13.0.3",
-    "prettier": "^2.7.1",
-    "remark-cli": "^11.0.0",
-    "remark-lint": "^9.1.1",
-    "remark-preset-lint-consistent": "^5.1.1",
-    "remark-preset-lint-markdown-style-guide": "^5.1.2",
-    "remark-preset-lint-recommended": "^6.1.2",
-    "remark-preset-prettier": "^2.0.1",
-    "vue": "^3.2.45",
-    "vuepress": "2.0.0-beta.51"
-  },
-  "lint-staged": {
-    "*.md": "prettier --write"
+    "rollup": ">=2",
+    "prettier-plugin-astro": "^0.5.4",
+    "sass": "^1.54.9"
   }
 }
