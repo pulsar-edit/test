@@ -12,5 +12,5 @@ export default defineConfig({
   server: {
     host: '0.0.0.0'
   },
-  site: SITE.url
+  site: 'https://test.pulsar-edit.dev'
 });
