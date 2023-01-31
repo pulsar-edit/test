@@ -5,7 +5,7 @@ import PostPreview from '../components/PostPreview.astro';
 
 import { SITE } from '../config';
 
-const allPosts = await Astro.glob('./blog/*.md');
+const allPosts = await Astro.glob('../pages/blog/*.md');
 
 allPosts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate));
 
@@ -40,5 +40,7 @@ const featured = allPosts.shift();
     </section>
 
     <Pagination />
+
+    <slot />
   </div>
 </Layout>
