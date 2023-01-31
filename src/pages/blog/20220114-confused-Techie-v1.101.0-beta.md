@@ -1,7 +1,7 @@
 ---
 title: Our Second Beta!
 author: confused-Techie
-date: 2022-01-15
+pubDate: 2022-01-15
 category:
   - dev
 ---
